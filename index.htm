@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"
+          ><img src="img/ERATUR-logo.png" alt="Eratur logo" class="logo"
+        /></a>
+        <ul id="desk_menu">
+          <li>
+            <a class="hover" href="#">Company</a>
+            <ul class="desk_dropdown dropdown">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Certificates</a></li>
+              <li><a href="#">Karyera</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="hover" href="#">Feedback</a>
+            <ul class="desk_dropdown dropdown">
+              <li><a href="#">Customer testimonials</a></li>
+              <li><a href="#">Certificates</a></li>
+              <li><a href="#">Travel images</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="hover" href="#">Tours</a>
+            <ul class="desk_dropdown dropdown">
+              <li><a href="#">Domestic tours</a></li>
+              <li><a href="#">Foreign tours</a></li>
+              <li><a href="#">Info tours</a></li>
+              <li><a href="#">Group tours(ekskursiyalar)</a></li>
+            </ul>
+          </li>
+          <li><a class="hover" href="#">Services</a></li>
+          <li>
+            <a class="hover" href="#">Cooperation</a>
+            <ul class="desk_dropdown dropdown">
+              <li><a href="#">Airlines</a></li>
+              <li><a href="#">Corporate cooperation</a></li>
+            </ul>
+          </li>
+          <li><a class="hover" href="#">Discover Azerbaijan</a></li>
+          <li><a class="hover" href="#">Contact</a></li>
+          <li class="desk_langs langs">
+            <a class="hover desk_lang lang" href="#">
+              <img src="img/az.png" alt="" /> AZ</a
+            >
+            <ul id="langs_menu">
+              <li>
+                <a href="#"><img src="img/ru.png" alt="" /> RU</a>
+              </li>
+              <li>
+                <a href="#"><img src="img/en.png" alt="" /> EN</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="hover" href="tel: 55 597-05-14"
+              ><i class="fa-solid fa-phone"></i> (+99455) 597-05-14</a
+            >
+          </li>
+        </ul>
+        <div id="nav_icon" onclick="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div id="sidebar">
+        <div id="close" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <a href="#">
+          <img src="img/ERATUR-logo.png" alt="Eratur logo" class="logo" />
+        </a>
+        <ul id="sidebar_menu">
+          <li
+            class="dropdown_content"
+            onclick="open_dropdown('company', 'comp_arrow')"
+          >
+            <a href="#"
+              >Company<svg
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mainMenuItemArrow_SPprM comp_arrow"
+              >
+                <path
+                  d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z"
+                ></path></svg
+            ></a>
+            <ul class="mob_dropdown company">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Certificates</a></li>
+              <li><a href="#">Karyera</a></li>
+            </ul>
+          </li>
+          <li
+            class="dropdown_content"
+            onclick="open_dropdown('feedback', 'feed_arrow')"
+          >
+            <a href="#"
+              >Feedback<svg
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mainMenuItemArrow_SPprM feed_arrow"
+              >
+                <path
+                  d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z"
+                ></path></svg
+            ></a>
+            <ul class="mob_dropdown feedback">
+              <li><a href="#">Customer testimonials</a></li>
+              <li><a href="#">Certificates</a></li>
+              <li><a href="#">Travel images</a></li>
+            </ul>
+          </li>
+          <li
+            class="dropdown_content"
+            onclick="open_dropdown('tours', 'tour_arrow')"
+          >
+            <a href="#"
+              >Tours<svg
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mainMenuItemArrow_SPprM tour_arrow"
+              >
+                <path
+                  d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z"
+                ></path></svg
+            ></a>
+            <ul class="mob_dropdown tours">
+              <li><a href="#">Domestic tours</a></li>
+              <li><a href="#">Foreign tours</a></li>
+              <li><a href="#">Info tours</a></li>
+              <li><a href="#">Group tours(ekskursiyalar)</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li
+            class="dropdown_content"
+            onclick="open_dropdown('cooperation', 'coop_arrow')"
+          >
+            <a href="#"
+              >Cooperation<svg
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mainMenuItemArrow_SPprM coop_arrow"
+              >
+                <path
+                  d="M1.00044 0.899902H7.10044V6.9999H5.90044V2.94843L1.4247 7.42417L0.576172 6.57564L5.05191 2.0999H1.00044V0.899902Z"
+                ></path></svg
+            ></a>
+            <ul class="mob_dropdown cooperation">
+              <li><a href="#">Airlines</a></li>
+              <li><a href="#">Corporate cooperation</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Discover Azerbaijan</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a id="get" href="#">Get a quotation</a></li>
+        </ul>
+        <div id="sidebar_icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="langs">
+          <div class="lang">
+            <img src="img/az.png" alt="Azerbaycan dili" />
+            <span>az</span>
+          </div>
+          <div class="lang">
+            <img src="img/en.png" alt="Azerbaycan dili" />
+            <span>en</span>
+          </div>
+          <div class="lang">
+            <img src="img/ru.png" alt="Azerbaycan dili" />
+            <span>ru</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bgdark"></div>
+    </main>
+
+    <script>
+      const nav_icon = document.getElementById("nav_icon");
+      const sidebar = document.getElementById("sidebar");
+      const close = document.getElementById("close");
+      const bgdark = document.querySelector(".bgdark");
+      const mob_dropdown = document.querySelector(".mob_dropdown");
+
+      function openMenu() {
+        sidebar.classList.toggle("open_close");
+        if ((sidebar.classList = "open_close")) bgdark.style.opacity = ".5";
+      }
+
+      function closeMenu() {
+        sidebar.classList.toggle("open_close");
+        bgdark.style.opacity = ".3";
+      }
+
+      function open_dropdown(param, arr) {
+        let menu = document.querySelector(`.${param}`);
+        let arrow = document.querySelector(`.${arr}`);
+        menu.classList.toggle("open_dropdown");
+        arrow.classList.toggle('arrow_rotate')
+      }
+    </script>
+  </body>
+</html>
